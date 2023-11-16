@@ -1,4 +1,4 @@
-uuuid:
+uuid:
   slot1:
     cooldown: 0
     quest:
@@ -7,3 +7,7 @@ uuuid:
       count: 20
       rewardAmount: 300
     progress: 7
+  slot2:
+    cooldown: 10020002024320
+    quest: []
+    progress: 0

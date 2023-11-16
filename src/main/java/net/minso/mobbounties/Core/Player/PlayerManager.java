@@ -1,4 +1,4 @@
-package net.minso.mobbounties.Core;
+package net.minso.mobbounties.Core.Player;
 
 import net.minso.mobbounties.Main;
 import org.bukkit.configuration.file.FileConfiguration;

@@ -1,4 +1,4 @@
-package net.minso.mobbounties.Core;
+package net.minso.mobbounties.Core.Quests;
 
 import org.bukkit.entity.EntityType;
 

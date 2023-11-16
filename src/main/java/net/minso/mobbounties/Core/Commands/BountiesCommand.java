@@ -1,4 +1,4 @@
-package net.minso.mobbounties;
+package net.minso.mobbounties.Core.Commands;
 
 import net.minso.mobbounties.Main;
 import org.bukkit.command.Command;

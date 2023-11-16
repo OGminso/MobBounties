@@ -1,7 +1,8 @@
 package net.minso.mobbounties;
 
-import net.minso.mobbounties.Core.PlayerManager;
-import net.minso.mobbounties.Core.QuestManager;
+import net.minso.mobbounties.Core.Commands.BountiesCommand;
+import net.minso.mobbounties.Core.Player.PlayerManager;
+import net.minso.mobbounties.Core.Quests.QuestManager;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -31,7 +32,6 @@ public final class Main extends JavaPlugin {
 
 
     private void registerListeners() {
-        registerEvent(new GUI());
         registerEvent(playerManager);
     }
 

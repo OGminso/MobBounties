@@ -1,4 +1,4 @@
-package net.minso.mobbounties;
+package net.minso.mobbounties.Core.Util;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemFlag;

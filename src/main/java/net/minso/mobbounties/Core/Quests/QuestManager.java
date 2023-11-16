@@ -1,9 +1,6 @@
-package net.minso.mobbounties.Core;
+package net.minso.mobbounties.Core.Quests;
 
 import net.minso.mobbounties.Main;
-import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.EntityType;
 import org.yaml.snakeyaml.Yaml;
 
