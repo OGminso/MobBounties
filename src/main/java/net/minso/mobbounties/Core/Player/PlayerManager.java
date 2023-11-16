@@ -46,5 +46,28 @@ public class PlayerManager implements Listener {
         }
 
 
+        //LoadPlayerFile(Player.uuid)
+        // - check if player has file if not create file and file with random quests
+
+        //open open gui check cooldown times plus load new quest aswell as check perms for 4-6
+        //claim quests once complete in gui.
+
+        //even listener for mob kills
+        //
+
+        //on disconnect save file
+        // on reload save and stop server save
+
+
+        //Gui layout
+        // - Enchanted once done
+        //bedrock if not avaialable
+        //barrier if on cooldown.
+        //filled map if active quest.
+
+        //papi support
+        // show title
+        //show progress
+
 
 }
