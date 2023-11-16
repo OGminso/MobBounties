@@ -1,0 +1,95 @@
+quests:
+  - name: "Slay 18 Creepers"
+    mobType: "CREEPER"
+    count: 18
+    rewardAmount: 1200
+
+  - name: "Defeat 25 Skeleton Archers"
+    mobType: "SKELETON"
+    count: 25
+    rewardAmount: 800
+
+  - name: "Hunt 20 Zombie Pigmen"
+    mobType: "ZOMBIFIED_PIGLIN"
+    count: 20
+    rewardAmount: 300
+
+  - name: "Hunt 15 Blaze"
+    mobType: "BLAZE"
+    count: 15
+    rewardAmount: 500
+
+  - name: "Vanquish 30 Endermen"
+    mobType: "ENDERMAN"
+    count: 30
+    rewardAmount: 1500
+
+  - name: "Hunt 12 Witch Doctors"
+    mobType: "WITCH"
+    count: 12
+    rewardAmount: 1000
+
+  - name: "Defeat 20 Vindicators"
+    mobType: "VINDICATOR"
+    count: 20
+    rewardAmount: 500
+
+  - name: "Slay 15 Strays"
+    mobType: "STRAY"
+    count: 15
+    rewardAmount: 800
+
+  - name: "Hunt 18 Guardians"
+    mobType: "GUARDIAN"
+    count: 18
+    rewardAmount: 1800
+
+  - name: "Collect 10 Ghast Tears"
+    mobType: "GHAST"
+    count: 10
+    rewardAmount: 1200
+
+  - name: "Slay 25 Husks"
+    mobType: "HUSK"
+    count: 25
+    rewardAmount: 600
+
+  - name: "Hunt 20 Polar Bears"
+    mobType: "POLAR_BEAR"
+    count: 20
+    rewardAmount: 2000
+
+  - name: "Kill 12 Rabbit"
+    mobType: "RABBIT"
+    count: 12
+    rewardAmount: 1500
+
+  - name: "Vanquish 30 Silverfish"
+    mobType: "SILVERFISH"
+    count: 30
+    rewardAmount: 700
+
+  - name: "Slay 15 Magma Cubes"
+    mobType: "MAGMA_CUBE"
+    count: 15
+    rewardAmount: 800
+
+  - name: "Defeat 18 Evokers"
+    mobType: "EVOKER"
+    count: 18
+    rewardAmount: 2200
+
+  - name: "Slay 10 Phantom"
+    mobType: "PHANTOM"
+    count: 10
+    rewardAmount: 1800
+
+  - name: "Hunt 25 Cave Spiders"
+    mobType: "CAVE_SPIDER"
+    count: 25
+    rewardAmount: 800
+
+  - name: "Slay 20 Wandering Traders"
+    mobType: "WANDERING_TRADER"
+    count: 20
+    rewardAmount: 1000

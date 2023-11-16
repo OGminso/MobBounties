@@ -1,0 +1,9 @@
+uuuid:
+  slot1:
+    cooldown: 0
+    quest:
+      name: "Hunt 20 Zombie Pigmen"
+      mobType: "ZOMBIFIED_PIGLIN"
+      count: 20
+      rewardAmount: 300
+    progress: 7

@@ -1,0 +1,8 @@
+name: MobBounties
+version: '${project.version}'
+main: net.minso.mobbounties.Main
+api-version: 1.20
+commands:
+  bounties:
+    description: open bounty board
+    usage: /bounties
