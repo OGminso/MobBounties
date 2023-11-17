@@ -7,9 +7,7 @@ import org.yaml.snakeyaml.Yaml;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class QuestManager {
     Main main = Main.getInstance();
@@ -57,6 +55,16 @@ public class QuestManager {
         }
 
     }
+
+    public Quest getRandomQuest() {
+        if (quests.isEmpty()) return null;
+
+        Random random = new Random();
+        int randomIndex = random.nextInt(quests.size());
+
+        return quests.get(randomIndex);
+    }
+
 
 
 

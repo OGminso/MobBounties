@@ -1,0 +1,8 @@
+- inventory click event
+    - add cooldown set
+    - add cooldown end new quest
+- add papi support
+
+to fix
+- make sure when chosing random quest check if player already has that one
+- format and fix messages from claiming rewards

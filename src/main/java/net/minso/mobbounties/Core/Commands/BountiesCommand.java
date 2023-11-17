@@ -17,7 +17,7 @@ public class BountiesCommand implements CommandExecutor {
         Player player = (Player) sender;
 
         if (cmd.getName().equalsIgnoreCase("bounties")) {
-            //main.gui.openGUI(player);
+            main.gui.openGUI(player);
             player.sendMessage("Opened Gui");
             return true;
         }
