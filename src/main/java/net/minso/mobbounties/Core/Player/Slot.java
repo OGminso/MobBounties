@@ -51,7 +51,7 @@ public class Slot {
         long minutes = (remainingTime % (60 * 60 * 1000)) / (60 * 1000);
         long seconds = (remainingTime % (60 * 1000)) / 1000;
 
-        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        return String.format("%02dh %02dm %02ds", hours, minutes, seconds);
     }
 
     public void removeQuest() {

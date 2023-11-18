@@ -11,6 +11,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+
 public final class Main extends JavaPlugin {
 
     private static Economy econ = null;
@@ -30,7 +32,13 @@ public final class Main extends JavaPlugin {
         }
 
         main = this;
-        saveResource("quests.yml", false); //fix this
+
+        String filePath = getDataFolder() + File.separator + "quests.yml";
+        File file = new File(filePath);
+        if (!file.exists()) {
+            saveResource("quests.yml", false);
+        }
+
         questManager = new QuestManager();
         playerManager = new PlayerManager();
         gui = new GUI();

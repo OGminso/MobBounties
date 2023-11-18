@@ -4,7 +4,7 @@ quests:
     count: 18
     rewardAmount: 1200
 
-  - name: "Defeat 25 Skeleton Archers"
+  - name: "Defeat 25 Skeletons"
     mobType: "SKELETON"
     count: 25
     rewardAmount: 800
@@ -14,7 +14,7 @@ quests:
     count: 20
     rewardAmount: 300
 
-  - name: "Hunt 15 Blaze"
+  - name: "Hunt 15 Blazes"
     mobType: "BLAZE"
     count: 15
     rewardAmount: 500
@@ -24,14 +24,14 @@ quests:
     count: 30
     rewardAmount: 1500
 
-  - name: "Hunt 12 Witch Doctors"
+  - name: "Hunt 12 Witches"
     mobType: "WITCH"
     count: 12
     rewardAmount: 1000
 
-  - name: "Defeat 20 Vindicators"
+  - name: "Defeat 10 Vindicators"
     mobType: "VINDICATOR"
-    count: 20
+    count: 10
     rewardAmount: 500
 
   - name: "Slay 15 Strays"
@@ -44,7 +44,7 @@ quests:
     count: 18
     rewardAmount: 1800
 
-  - name: "Collect 10 Ghast Tears"
+  - name: "Defeat 10 Ghast"
     mobType: "GHAST"
     count: 10
     rewardAmount: 1200
@@ -59,7 +59,7 @@ quests:
     count: 20
     rewardAmount: 2000
 
-  - name: "Kill 12 Rabbit"
+  - name: "Kill 12 Rabbits"
     mobType: "RABBIT"
     count: 12
     rewardAmount: 1500
@@ -74,12 +74,12 @@ quests:
     count: 15
     rewardAmount: 800
 
-  - name: "Defeat 18 Evokers"
+  - name: "Defeat 14 Evokers"
     mobType: "EVOKER"
-    count: 18
+    count: 14
     rewardAmount: 2200
 
-  - name: "Slay 10 Phantom"
+  - name: "Slay 10 Phantoms"
     mobType: "PHANTOM"
     count: 10
     rewardAmount: 1800
@@ -88,8 +88,3 @@ quests:
     mobType: "CAVE_SPIDER"
     count: 25
     rewardAmount: 800
-
-  - name: "Slay 20 Wandering Traders"
-    mobType: "WANDERING_TRADER"
-    count: 20
-    rewardAmount: 1000

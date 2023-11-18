@@ -146,7 +146,7 @@ public class PlayerData {
         }
     }
 
-    public void printPlayerData() {
+    /*public void printPlayerData() {
         ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
 
         console.sendMessage("Player Data for UUID: " + uuid);
@@ -171,7 +171,6 @@ public class PlayerData {
             console.sendMessage("Progress: " + currentSlot.getProgress());
             console.sendMessage("");
         }
-    }
-
+    }*/
 }
 

@@ -4,13 +4,13 @@ import net.minso.mobbounties.Core.Player.PlayerData;
 import net.minso.mobbounties.Core.Player.Slot;
 import net.minso.mobbounties.Core.Player.Slots;
 import net.minso.mobbounties.Main;
+import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
-
-import java.text.DecimalFormat;
 
 public class QuestTracker implements Listener {
 
@@ -35,23 +35,11 @@ public class QuestTracker implements Listener {
                 // The killed mob matches the quest's target mob
                 if (playerSlot.getProgress() <= quest.getCount() -1) {
                     playerSlot.setProgress(playerSlot.getProgress() + 1);
-                    player.sendMessage(playerSlot.getProgress() + "/" + quest.getCount());
-                    DecimalFormat df = new DecimalFormat("#.##");
-                    String progressPercentage = df.format(((double) playerSlot.getProgress() / quest.getCount()) * 100);
-                    player.sendMessage(String.valueOf(progressPercentage + "%"));
-                } else {
-                    player.sendMessage("Done");
+                    if (playerSlot.getProgress() == quest.getCount()) {
+                        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 0.5f); //allows click on complete quest
+                        player.sendMessage(ChatColor.GREEN + "Bounty Completed! " + ChatColor.YELLOW + "Visit the QuestKeeper Seraphina at spawn.");
+                    }
                 }
-
-
-
-                // Check if the quest is completed
-                if (playerSlot.getProgress() >= quest.getCount()) {
-                    // Quest completed, provide rewards
-                    //completeQuest(player, playerSlot);
-                }
-
-                return; // Exit the loop since we found the matching quest
             }
         }
 

@@ -3,7 +3,6 @@ package net.minso.mobbounties.Core.Player;
 import net.minso.mobbounties.Core.Quests.Quest;
 import net.minso.mobbounties.Main;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -28,7 +27,7 @@ public class PlayerManager implements Listener {
         PlayerData playerData = new PlayerData(uuid);
         if (playerData.playerDataFileExists()) {
             playerData.loadPlayerDataFromFile();
-            Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN+ "PlayerJoinEvent: Loaded player "+  uuid.toString());
+            //Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN+ "PlayerJoinEvent: Loaded player "+  uuid.toString());
         } else {
             playerData.setDefaults();
         }
@@ -44,16 +43,17 @@ public class PlayerManager implements Listener {
         PlayerData playerData = playerDataHashMap.get(uuid);
         playerData.savePlayerDataToFile();
         playerDataHashMap.remove(uuid);
-        Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN+  "Quit Event: player saved "+  uuid.toString());
+        //Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN+  "Quit Event: player saved "+  uuid.toString());
 
     }
 
+    /*
     @EventHandler
     public void onBlockBreak(BlockBreakEvent event) {
         Player player = event.getPlayer();
         PlayerData playerData = getPlayerData(player.getUniqueId());
         playerData.printPlayerData();
-    }
+    }*/
     
 
     public PlayerData getPlayerData(UUID uuid) {
@@ -79,18 +79,23 @@ public class PlayerManager implements Listener {
             playerData.savePlayerDataToFile();
             playerDataHashMap.remove(playerData.getUUID());
         }
+
+        for (Player onlinePlayers : Bukkit.getOnlinePlayers()) {
+            if (onlinePlayers.getOpenInventory().getTitle().equalsIgnoreCase(main.gui.inventoryTitle)) {
+                onlinePlayers.closeInventory();
+            }
+        }
+
         playerDataHashMap.clear();
+
     }
 
     public void setRandomQuests(Player player) {
         PlayerData playerData = getPlayerData(player.getUniqueId());
-
         for (Slots slot : Slots.values()) {
             String permission = "mobbounties.slot." + slot.name().toLowerCase();
-
-
-
             if (slot.ordinal() <= 2 || player.hasPermission(permission)) {
+                if (playerData.getSlot(slot).onCooldown()) return;
                 if (playerData.getSlot(slot).getQuest() == null) {
                     Quest randomQuest = main.questManager.getRandomQuest();
                     Slot newSlot = new Slot(0, randomQuest, 0);
@@ -99,23 +104,5 @@ public class PlayerManager implements Listener {
             }
         }
     }
-
-        //open open gui check cooldown times plus load new quest aswell as check perms for 4-6
-        //claim quests once complete in gui.
-
-        //even listener for mob kills
-        //
-
-
-        //Gui layout
-        // - Enchanted once done
-        //bedrock if not avaialable
-        //barrier if on cooldown.
-        //filled map if active quest.
-
-        //papi support
-        // show title
-        //show progress
-
 
 }

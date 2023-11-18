@@ -5,7 +5,12 @@ Mob bounty plugin for minecraft GUI driven interactions.
 - Vault
 
 ## Features
-- ??
+- Cooldown
+- Quests from File
+- Player savs file
 
 ## TO-DO
-- ALOT
+- Add PAPI Support
+- Add Cancel quest
+- Add admin commands to control players quests.
+- idk yet?
