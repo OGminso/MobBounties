@@ -1,4 +1,4 @@
-# Mob Bounties
+# Mob Bounties v0.1
 Mob bounty plugin for minecraft GUI driven interactions.
 
 ## Dependency
