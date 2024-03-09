@@ -13,4 +13,3 @@ Mob bounty plugin for minecraft GUI driven interactions.
 - Add PAPI Support
 - Add Cancel quest
 - Add admin commands to control players quests.
-- idk yet?
